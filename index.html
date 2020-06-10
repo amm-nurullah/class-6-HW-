@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html leng="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML Class 6</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">	
+	</head>
+	<body>
+
+	<!--selector table start-->	
+		<table>
+			<caption>Selector</caption>
+
+			<tr>
+				<th>Tag selector </th>
+				<th>Class selector </th>
+				<th>ID selector </th>
+			</tr>
+
+			<tr>
+				<td><p>Tag selector </p></td>
+				<td><p class="class_sel">Class selector </p></td>
+				<td><p id="id_sel">ID Selector</p></td>
+			</tr>
+
+			<tr>
+				<td><p>Example:</p><span>&lt;p &gt;  , &lt;h1 &gt;   </span> <p>etc.</p></td>
+				<td><span>.class_sel</span> </td>
+				<td><span>#id_sel</span> </td>
+			</tr>
+		</table>
+
+	<!--selector table close-->	
+			<br><br>
+	<!--kbd element start-->	
+
+		<h1>The kbd element</h1>
+		<p>Press <kbd>CTRL</kbd> + <kbd>c</kbd> to copy text (Windows).</p>
+		<p>Press <kbd>Cmd</kbd> + <kbd>c</kbd> to copy text (Mac OS)</p>
+		<p>Press<kbd>CTRL</kbd> + <kbd>v</kbd> to past text (Winndows)</p>
+		<p>Press<kbd>CTL</kbd> + <kbd>x</kbd> to cut text (Windows)</p>
+
+	<!--kbd element close-->
+		<br>
+	<!--label element start-->
+		
+		<h1> The label element </h1>
+		<p>Click on one of the text labels to toggle the related radio button:</p>
+
+		<form action="#" method="get" encytype="multipart/form-data">
+
+			<label for="gender">Gender</label>
+
+			<input type="radio" value="Male" name="gender" class="" id=""><span>Male</span>
+
+			<input type="radio" value="Female" name="gender" class="" id=""><span>Female</span>  <br>
+
+			<input type="submit" value="submit">
+			
+		</form>
+
+	<!--label element close-->
+
+		<br>
+
+	<!--legend element start-->
+
+		<h1> The legend element </h1>
+
+		<form action="#" method="get" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Personalia:</legend>
+
+				<label for="first_name">First Name</label>
+				<input type="text" placeholder="Enter your frst name" name="first_name" id="first_name" class="first_name"><br><br>
+
+				<label for="last_name">Last Name</label>
+				<input type="text" placeholder="Enter your last name" name="last_name" id="last_name" class="last_name"><br><br>
+
+				<label for="email">Email</label>
+				<input type="email" placeholdr="Email Address" nmae="email" id="email" class="email"><br><br>
+
+				<label for="date">Date of Birth</label>
+				<input type="date" placeholder="Date" name="date" id="date" class="date"><br><br>
+				<br>
+				<input type="submit" valu="submit">
+
+
+			</fieldset>
+		</form>
+
+	<!--legend element close-->
+
+		<br>
+
+	<!--ol and ul element start-->
+
+		<h1>The ol and ul elements</h1>
+
+		<ol>
+			<li>Milk</li>
+			<li>Tea</li>
+			<li>Coffee</li>
+		</ol>
+
+
+		<ul>
+			<li>Milk</li>
+			<li>Tea</li>
+			<li>Coffee</li>
+
+		</ul>
+
+	<!--ol and ul element close-->
+
+		<br>
+
+		<h1>The mark element</h1>
+		<p>My Name Is <mark>Mohammad Nurullah</mark></p> <br>
+
+		<h1>The meter element</h1>
+
+		<label for="disk_c">Local Disk(C:)</label>
+		<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>
+
+		<label for="disk_d">Local Disk(D:)</label>
+		<meter id="disk_d" value="5" min="0" max="10">5 out of 10</meter>
+
+		<label for="disk_e">Local Disk(E:)</label>
+		<meter id="disk_e" value="0.7">70%</meter>
+
+		<br>
+
+		<h1>The object element</h1>
+
+		<object data="image.jpg" width="300" height="200"></object><br>
+
+		<h1>The optgroup element</h1>
+		<form action="#" method="get" enctype="multipart/form-data">
+			<label for="upazila">Choose Upazila</label>
+
+			<select name="upazila" id="upazila">
+				<optgroup label="Dhaka District">
+					<option value="dhamrai upazila">Dhamrai Upazila</option>
+					<option value="dohar upazila">Dohar Upazila</option>
+					<option value="keraniganj upazila">Keraniganj Upazila</option>
+					<option value="nawabganj upazila">Nawabganj Upazila</option>
+					<option value="savar upazila">Savar Upazila</option>
+					<option value="demra upazila">Demra Upazila</option>
+				</optgroup>
+
+				<optgroup label="Sherpur District">
+					<option value="Jhenaigati upazila">Jhenaigati Upazila</option>
+					<option value="Nakla upazila">Nakla Upazila</option>
+					<option value="Nalitabari upazila">Nalitabari Upazila</option>
+					<option value="Sherpur upazila">Sherpur Upazila</option>
+					<option value="Sreebardi upazila">Sreebardi Upazila</option>
+					
+				</optgroup>
+			</select>
+					<br><br>
+				<input type="submit" name="submit">
+		</form>
+		<br>
+
+		<h1>The output element</h1>
+
+		<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+			<input type="range" id="a" value="50">
+			+ <input type="number" id="b" value="25">
+			= <output name="x" for="a b"></output>
+			
+		</form><br>
+
+		<h1>The param element</h1>
+		<object data="http://www.animal-sounds.org/Air/Peacock%20animals018.wav">
+			<param name="autoplay" value="true">
+		</object><br>
+
+		<h1>The pre element</h1>
+
+			<pre>
+				Text in a pre element
+				is displayed in a fixed-width
+				font, and it preserves
+				both      
+
+				spaces and
+				line breaks
+			</pre><br>
+
+
+			<h1>The progress element</h1>
+			<label for="file">Loading</label>
+			<progress id="file" value="50" max="100">50%</progress><br>
+			<h1>The q element</h1>
+
+			<p>WWF's goal is to: 
+			<q>Build a future where people live in harmony with nature.</q>
+			We hope they succeed.</p><br>
+
+			<h1>The s element</h1>
+			<p><s>Only 50 tickets left</s></p>
+			<p>SOLD OUT!</p><br>
+
+			<h1>The sub and sup elements</h1>
+
+			<p>H <sub>2</sub> O</p>
+			<p>10 <sup>3</sup> </p><br>
+
+			<h1>The summary element</h1>
+
+			<details>
+				<summary>Novartis Bangladesh</summary>
+				<p>Novartis employs more than 119 000 associates worldwide. The ability to attract, grow and keep talented people is vital for us to execute our strategy and keep developing innovative products that produce better results for patients. In the context of an increasingly challenging healthcare environment and rapid change at Novartis, we are reinforcing our culture, boosting our associates’ skills and building a diverse workforce with talented leaders.</p>
+			</details><br>
+
+			<h1>The svg element</h1>
+
+			<svg width="" hight="">
+				<circle cx="80" cy="70" r="60" stroke="green" stroke-width="10" fill="red">
+			</svg><br>
+
+			<h1>The video element</h1>
+
+			<video width="320" height="240" controls>
+			  <source src="Peacock Dance.mp4" type="video/mp4">
+			 <source src="Peacock Dance.ogg" type="video/ogg">
+			</video>
+					<br>
+
+     		<p>Box model concept is actually descibe the model of box as structure content+padding+border+margin. Below is an example</p>
+
+				<img src="boxmodel-image.png" class="Box_model"><br>
+
+			<h1>Semantic Element</h1>
+		<ul>
+			<li><span>&lt;article&gt;</span></li>
+			<li><span>&lt;audio&gt;</span></li>
+			<li><span>&lt;aside&gt;</span></li>
+			<li><span>&lt;details&gt;</span></li>
+			<li><span>&lt;figcaption&gt;</span></li>
+			<li><span>&lt;mark&gt;</span></li>
+			<li><span>&lt;nav&gt;</span></li>
+			<li><span>&lt;section&gt;</span></li>
+			<li><span>&lt;summary&gt;</span></li>
+			<li><span>&lt;table&gt;</span></li>
+			<li><span>&lt;time&gt;</span></li>
+			<li><span>&lt;video&gt;</span></li>
+		
+
+		</ul>
+<br>
+		<h1>Non-Semantic Element</h1>
+		<ol>
+			<li><span>&lt;div&gt;</span></li>
+			<li><span>&lt;span&gt;</span></li>
+		
+		</ol>	<br>
+		<h1>Block element</h1>
+
+
+		<ol>
+			<li><span>&lt;address&gt;</span></li>
+			<li><span>&lt;article&gt;</span></li>
+			<li><span>&lt;aside&gt;</span></li>
+			<li><span>&lt;blockquote&gt;</span></li>
+			<li><span>&lt;canvas&gt;</span></li>
+			<li><span>&lt;dd&gt;</span></li>
+			<li><span>&lt;div&gt;</span></li>
+			<li><span>&lt;dl&gt;</span></li>
+			<li><span>&lt;dt&gt;</span></li>
+			<li><span>&lt;fieldset&gt;</span></li>
+			<li><span>&lt;figcaption&gt;</span></li>
+			<li><span>&lt;figure&gt;</span></li>
+			<li><span>&lt;footer&gt;</span></li>
+			<li><span>&lt;form&gt;</span></li>
+			<li><span>&lt;h1&gt;-&lt;h6&gt;</span></li>
+			<li><span>&lt;header&gt;</span></li>
+			<li><span>&lt;hr&gt;</span></li>
+			<li><span>&lt;main&gt;</span></li>
+			<li><span>&lt;nav&gt;</span></li>
+			<li><span>&lt;noscript&gt;</span></li>
+			<li><span>&lt;ol&gt;</span></li>
+			<li><span>&lt;p&gt;</span></li>
+			<li><span>&lt;pre&gt;</span></li>
+			<li><span>&lt;section&gt;</span></li>
+			<li><span>&lt;table&gt;</span></li>
+			<li><span>&lt;tfoot&gt;</span></li>
+			<li><span>&lt;ul&gt;</span></li>
+			<li><span>&lt;video&gt;</span></li>
+		</ol>
+		<br>
+		<h1>Inline element</h1>
+		<ol>
+			<li><span>&lt;a&gt;</span></li>
+			<li><span>&lt;abbr&gt;</span></li>
+			<li><span>&lt;acronym&gt;</span></li>
+			<li><span>&lt;b&gt;</span></li>
+			<li><span>&lt;bdo&gt;</span></li>
+			<li><span>&lt;big&gt;</span></li>
+			<li><span>&lt;br&gt;</span></li>
+			<li><span>&lt;button&gt;</span></li>
+			<li><span>&lt;cite&gt;</span></li>
+			<li><span>&lt;code&gt;</span></li>
+			<li><span>&lt;dfn&gt;</span></li>
+			<li><span>&lt;em&gt;</span></li>
+			<li><span>&lt;i&gt;</span></li>
+			<li><span>&lt;img&gt;</span></li>
+			<li><span>&lt;input&gt;</span></li>
+			<li><span>&lt;kbd&gt;</span></li>
+			<li><span>&lt;label&gt;</span></li>
+			<li><span>&lt;map&gt;</span></li>
+			<li><span>&lt;object&gt;</span></li>
+			<li><span>&lt;output&gt;</span></li>
+			<li><span>&lt;q&gt;</span></li>
+			<li><span>&lt;samp&gt;</span></li>
+			<li><span>&lt;script&gt;</span></li>
+			<li><span>&lt;select&gt;</span></li>
+			<li><span>&lt;small&gt;</span></li>
+			<li><span>&lt;span&gt;</span></li>
+			<li><span>&lt;strong&gt;</span></li>
+			<li><span>&lt;sub&gt;</span></li>
+			<li><span>&lt;sup&gt;</span></li>
+			<li><span>&lt;textarea&gt;</span></li>
+			<li><span>&lt;time&gt;</span></li>
+			<li><span>&lt;tt&gt;</span></li>
+			<li><span>&lt;var&gt;</span></li>
+		</ol>
+
+	<!--	<br><br>
+
+	<table>
+		<caption>HTML Elements</caption>
+
+			<tr>
+				<th>Elements </th>
+				<th>Description </th>
+				<th>Example </th>
+			</tr>
+
+			<tr>
+				<td><p>kbd element </p></td>
+				<td>&lt;p&gt;Press &lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;c&lt;/kbd&gt; to copy text (Windows)&lt;/p&gt;</td>
+				<td><p>Press <kbd>CTRL</kbd> + <kbd>c</kbd> to copy text (Windows)</p>
+					<p>Press <kbd>Cmd</kbd> + <kbd>c</kbd> to copy text (Mac OS)</p>
+					<p>Press<kbd>CTRL</kbd> + <kbd>v</kbd> to past text (Winndows)</p>
+					<p>Press<kbd>CTL</kbd> + <kbd>x</kbd> to cut text (Windows)</p>
+				</td>
+			</tr>
+			<tr>
+				<td><p>kbd element </p></td>
+				<td>&lt;p&gt;Press &lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;c&lt;/kbd&gt; to copy text (Windows)&lt;/p&gt;</td>
+				<td><p>Press <kbd>CTRL</kbd> + <kbd>c</kbd> to copy text (Windows)</p>
+					<p>Press <kbd>Cmd</kbd> + <kbd>c</kbd> to copy text (Mac OS)</p>
+					<p>Press<kbd>CTRL</kbd> + <kbd>v</kbd> to past text (Winndows)</p>
+					<p>Press<kbd>CTL</kbd> + <kbd>x</kbd> to cut text (Windows)</p>
+				</td>
+			</tr>
+			<tr>
+				<td><p>kbd element </p></td>
+				<td>&lt;p&gt;Press &lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;c&lt;/kbd&gt; to copy text (Windows)&lt;/p&gt;</td>
+				<td><p>Press <kbd>CTRL</kbd> + <kbd>c</kbd> to copy text (Windows)</p>
+					<p>Press <kbd>Cmd</kbd> + <kbd>c</kbd> to copy text (Mac OS)</p>
+					<p>Press<kbd>CTRL</kbd> + <kbd>v</kbd> to past text (Winndows)</p>
+					<p>Press<kbd>CTL</kbd> + <kbd>x</kbd> to cut text (Windows)</p>
+				</td>
+			</tr>
+			<tr>
+				<td><p>kbd element </p></td>
+				<td>&lt;p&gt;Press &lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;c&lt;/kbd&gt; to copy text (Windows)&lt;/p&gt;</td>
+				<td><p>Press <kbd>CTRL</kbd> + <kbd>c</kbd> to copy text (Windows)</p>
+					<p>Press <kbd>Cmd</kbd> + <kbd>c</kbd> to copy text (Mac OS)</p>
+					<p>Press<kbd>CTRL</kbd> + <kbd>v</kbd> to past text (Winndows)</p>
+					<p>Press<kbd>CTL</kbd> + <kbd>x</kbd> to cut text (Windows)</p>
+				</td>
+			</tr>
+
+		
+	</table>-->
+
+								
+	</body>	
+</html>
+
+
+
